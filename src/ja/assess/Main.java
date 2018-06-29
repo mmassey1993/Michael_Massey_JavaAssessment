@@ -3,6 +3,16 @@ package ja.assess;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+
+        Game game = new Game(5,5);
+        game.setMap();
+        game.setPosTreasure();
+
+        Player player = new Player();
+        player.setPos();
+
+        game.runGame();
+
     }
 }
